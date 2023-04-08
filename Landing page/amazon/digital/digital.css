@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#nav{
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 0 40px;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav>h1{
+    font-size: 20px;
+}
+#nav #part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#nav #part2 a{
+    text-decoration: none;
+    font-size: 18px;
+    color:#222;
+    margin: 20px;
+}
+#nav #part2 a:nth-last-child(1){
+    /* background-color: red; */
+    padding:10px 30px;
+    border-radius: 50px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid black;
+}
+#nav #part2 a:nth-last-child(1) #green{
+    width: 100%;
+    top: 0%;
+    left: -100%;
+    background-color: springgreen;
+    height: 100%;
+    transition: left 0.4s ease;
+    position: absolute;
+}
+#nav #part2 a:nth-last-child(1):hover #green{
+    left: 0;
+}
+#nav #part2 a:nth-last-child(1) h5{
+    font-weight: 100;
+    position: relative;
+    z-index: 99;
+}
+#main>h1{
+    font-size: 5.5vw;
+    font-weight: 100;
+    /* background-color: red; */
+    width: 50%;
+    position: relative;
+    text-align: center;
+}
+#main>h1::after{
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 16px;
+    background-image:url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,0%);
+}
+#part2 i{
+    /* margin-top: 5%; */
+    font-size: 17px;
+}
